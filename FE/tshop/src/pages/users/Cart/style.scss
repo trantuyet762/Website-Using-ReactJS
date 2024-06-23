@@ -1,0 +1,62 @@
+@use "sass:map";
+@import "style/pages/all";
+@import "style/style";
+@import "style/pages/theme";
+ .container{
+    .row{
+        &.cart-border{
+            border-bottom: 1px solid #d4c9c9cc;
+            padding-bottom: 30px;
+            justify-content: end;
+            .btn-danger{
+                text-align: right;
+                padding: 10px 20px;
+                background-color: map.get($theme-color,"main");
+                border: 0px;
+                color: #fff;
+            }
+        }
+        table{
+            width: 100%;
+            tr{
+
+               th{
+                padding: 35px 0px;
+               }
+                 td{
+                    padding: 20px 0px;
+                    text-align: center;
+                    img{
+                        width: 150px;
+                        height: 200px;
+                    }
+                    
+                       &:last-child{
+                        text-align: end;
+                        .btn-danger{
+                            padding: 10px 20px;
+                            background-color: map.get($theme-color,"main");
+                            border: 0px;
+                            color: #fff;
+                            margin-right: 10px;
+                        }
+                        .btn-primary{
+                            padding: 10px 20px;
+                            background-color: green;
+                            border: 0px;
+                            color: #fff;
+                        }
+                       } 
+                    }
+                  
+                }
+                tr:last-child{
+                    th:first-child{
+                        text-align: right;
+                        
+                    }
+                }
+            }
+        }
+    }
+ 
