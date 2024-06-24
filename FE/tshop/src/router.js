@@ -5,6 +5,7 @@ import MasterLayout from "./pages/users/theme/masterLayout";
 import ProfilePage from "./pages/users/profilePage";
 import ProductsPage from "pages/users/productsPage";
 import Cart from "pages/users/Cart";
+import DetailProduct from "pages/users/DetailProduct";
 const renderUserRouter=()=>{
     const userRouters=[
        {
@@ -22,8 +23,12 @@ const renderUserRouter=()=>{
        {
         path: ROUTERS.USER.CART,
         component: <Cart/>
-       }
+       },
        
+       {
+        path: `${ROUTERS.USER.DETAILPRODUCT}/:id`,
+        component: <DetailProduct/>
+       },
     ]
     return (
         <MasterLayout>

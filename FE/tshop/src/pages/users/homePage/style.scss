@@ -266,6 +266,7 @@
         .featured
         {
          .featured_item{
+            margin-left: 0px!important;
             .featured_item_pic{
                 height: 150px!important;
                 background-size: cover;
@@ -285,7 +286,7 @@
             .featured_item_text{
                 h6{
                     font-size: 10px!important;
-                    min-height: 40px;
+                    min-height: 72px;
                     margin-bottom: 5px;
                 }
                 h5{

@@ -2,7 +2,9 @@
 @import "style/pages/all";
 @import "style/style";
 @import "style/pages/theme";
- .container{
+@import "style/pages/responsive";
+ .container.cart_list{
+    
     .row{
         &.cart-border{
             border-bottom: 1px solid #d4c9c9cc;
@@ -14,49 +16,143 @@
                 background-color: map.get($theme-color,"main");
                 border: 0px;
                 color: #fff;
+                cursor: pointer;
             }
         }
-        table{
-            width: 100%;
-            tr{
+        &.cart_list_mobile{
+            
+            display: none;
+            opacity: 0;
+        }
+       
+            
+            table{
+                width: 100%;
+                tr{
+    
+                   th{
+                    padding: 35px 0px;
+                   }
+                     td{
+                        padding: 20px 0px;
+                        text-align: center;
+                        img{
+                            width: 150px;
+                            height: 200px;
+                        }
+                        
+                           &:last-child{
+                            text-align: end;
+                            .btn-danger{
+                                padding: 10px 20px;
+                                background-color: map.get($theme-color,"main");
+                                border: 0px;
+                                color: #fff;
+                                margin-right: 10px;
+                                cursor: pointer;
+                            }
+                            .btn-primary{
+                                padding: 10px 20px;
+                                background-color: green;
+                                border: 0px;
+                                color: #fff;
+                                cursor: pointer;
+                            }
+                           } 
+                        }
+                      
+                    }
+                    tr:last-child{
+                        th:first-child{
+                            text-align: right;
+                            
+                        }
+                    }
+                }
+        }
+        
+        }
+    
+ @include Responsive($TABLET_DEVICE){
 
-               th{
-                padding: 35px 0px;
-               }
-                 td{
-                    padding: 20px 0px;
-                    text-align: center;
+.container .row table tr
+{
+    td{
+        font-size: 14px;
+        img{
+            height: 175px;
+        }
+    }
+td:last-child{
+    text-align: right;
+    .btn-danger {
+        margin-right: 0px!important;
+        margin-bottom: 10px;
+    }
+} 
+}
+ }
+ @include Responsive($WIDE_MOBILE){
+    .container .row table tr td {
+        padding-left: 10px;
+        img{
+            height: 160px;
+        }
+    }
+    td:last-child 
+    {
+        .btn-danger{
+        margin-right: 0px!important;
+        margin-bottom: 10px;
+    }
+    .btn-primary {
+        padding: 3px 25px!important;
+    }
+    }
+ }
+ @include Responsive($SMALL_DEVICES){
+    .cart-border{
+        margin-right: 5px;
+    }
+    .cart_list_products{
+        opacity: 0!important;
+        display: none!important;
+    }
+    .cart_list_mobile{
+        display: block!important;
+        opacity: 1!important;
+        margin-top: 30px;
+        table{
+            tr{
+                td{
+                    padding: 20px 10px!important;
                     img{
-                        width: 150px;
-                        height: 200px;
+                        height: 110px!important;
+                        width: 80px!important;
+                    }
+                    &:last-child{
+                        text-align: left!important;
+                        display: block;
+                        .totalprice_cart{
+                            padding-top: 15px;
+                            justify-content: space-between;
+                            display: flex!important;
+                            align-items: center;
+                            .quantity_selector{
+                                padding:8px 0px;
+                                display: flex;
+                                justify-content: space-around;
+                                width: 40%;
+                                border: 1px solid #ededed;
+                                .minus, .plus{
+                                    cursor: pointer;
+                                }
+                            }
+                        }
                     }
                     
-                       &:last-child{
-                        text-align: end;
-                        .btn-danger{
-                            padding: 10px 20px;
-                            background-color: map.get($theme-color,"main");
-                            border: 0px;
-                            color: #fff;
-                            margin-right: 10px;
-                        }
-                        .btn-primary{
-                            padding: 10px 20px;
-                            background-color: green;
-                            border: 0px;
-                            color: #fff;
-                        }
-                       } 
-                    }
-                  
-                }
-                tr:last-child{
-                    th:first-child{
-                        text-align: right;
-                        
-                    }
                 }
             }
         }
     }
- 
+ }

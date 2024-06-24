@@ -2,6 +2,7 @@
 @use "sass:map";
 @import "style/pages/theme";
 @import "style/pages/all";
+@import "style/pages/responsive";
 @import "style/style";
 .container{
    
@@ -65,4 +66,40 @@
 
     }
     
+}
+@include Responsive($TABLET_DEVICE){
+    .container .sidebar .sidebar_item h2{
+        font-size: 16px;
+    }
+}
+@include Responsive($WIDE_MOBILE){
+    .container .sidebar .sidebar_item p, a ,h2{
+        font-size: 14px;
+    }
+    .breadcrumb{
+        padding: 25px;
+    }
+}
+@include Responsive($SMALL_DEVICES){
+    .featured_item {
+        margin-left: 60px!important;
+        .featured_item_pic{
+            height: 200px;
+            background-size: contain;
+            ul li svg{
+                padding: 15px;
+                height: 15px;
+                width: 15px;
+            }
+        }
+        .featured_item_text h5{
+            font-size: 14px;
+        }
+    }
+    .container .sidebar .sidebar_item {
+        min-width: 130px;
+        h2, p, a{
+            font-size: 14px;
+        }
+    }
 }

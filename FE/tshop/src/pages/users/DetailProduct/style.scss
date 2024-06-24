@@ -1,0 +1,219 @@
+@use "sass:map";
+@import "style/pages/theme";
+@import "style/pages/all";
+@import "style/style";
+  
+.container{
+    .product_container_1{
+        .single_product_pics{
+            .single_product_thumnails{
+                
+                ul{
+                    li{
+                        list-style: none;
+                        margin-bottom: 10px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        .single_product_image{
+
+            img{
+                width: 100%;
+                margin-left: 25px;
+            }
+        }
+            
+        }
+        .product_details{
+            text-align: justify;
+            padding-left: 50px;
+            display: block;
+            .product_details_title{
+                margin-bottom: 150px;
+                h2{
+                    font-size: 36px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+                p{
+                    color: #f5f5f5;
+                    font-size: 16px;
+                    line-height: 1.7;
+                    color: #656565;
+                }
+            }
+            .free_delivery{
+                padding: 20px 0;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 16px;
+                background-color: #f5f5f5;
+                margin-bottom: 20px;
+            }
+            .product_view{
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                border-top: 1px solid #cccc;
+                padding-top: 30px;
+                svg{
+                    padding-left: 5px;
+                }
+            }
+            .product_price{
+                padding-top: 20px;
+                p{
+                    display: inline-block;
+                    padding-right: 30px ;
+                    &:first-child{
+                        font-size: 24px;
+                        color: map.get($theme-color,"main");
+                        font-weight: 600;
+                    }
+                    &:last-child{
+                        color: #fac451;
+                        border: #fac451;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .product_quantity{
+                display: flex;
+                align-items: center;
+                column-gap: 25px;
+                margin-top: 20px;
+                .quantity_selector{
+                    padding:15px 0px;
+                    display: flex;
+                    justify-content: space-around;
+                    width: 30%;
+                    border: 1px solid #ededed;
+                    .minus, .plus{
+                        cursor: pointer;
+                    }
+                }
+                button{
+                    padding: 15px;
+                    background-color: map.get($theme-color,"main");
+                    font-size: 14px;
+                    color: #fff;
+                    border: 0px;
+                    cursor: pointer;
+                }
+
+            }
+        }
+        
+    }
+    .product_container{
+        margin-top: 80px;
+        border-top: 1px solid rgba(204, 204, 204, 0.8);;
+        padding-top: 30px;
+        .react-tabs{
+            width: 100%;
+            .react-tabs__tab-list{
+                text-align: center;
+                border-bottom: 0px;
+                .react-tabs__tab{
+                    border: 0px;
+                    padding: 6px 63px;
+                    margin-left: 35px;
+                }
+                .react-tabs__tab--selected{
+                    
+                    border-bottom: 1px solid red;
+                }
+            }
+            .react-tabs_tab:focus:after{
+                height: 0px!important;
+                bottom: 0px!important;
+            }
+            .react-tabs__tab-panel, .react-tabs__tab-panel--selected{
+                margin: 50px 0;
+                p{
+                    line-height: 1.7;
+                    font-size: 16px;
+                    color: map.get($theme-color,"normal-text");
+                }
+            }
+            
+        }
+        .add_review{
+            h2, .icon_star, .button_review, textarea{
+                margin-bottom: 20px;
+            }
+            h2{
+                font-weight: 500;
+                color: map.get($theme-color,"normal-text");
+            }
+            .icon_star{
+                svg{
+                    color: #fac451;
+                        border: #fac451;
+                      font-size: 20px;
+                }
+                
+            }
+            .button_review{
+
+                button{
+                padding: 15px 30px;
+                background-color: map.get($theme-color,"main");
+                color: #fff;
+                border: 0px;
+                }
+                
+                text-align: right;
+                
+            }
+            textarea{
+                height: 200px;
+                width: 100%;
+                padding-left: 0px;
+            }
+        }
+        .review_title{
+            display: block;
+            h2{
+                color: map.get($theme-color,"main");
+                text-decoration: underline;
+                margin-bottom: 30px;
+            }
+            .users_review{
+                display: flex;
+                .user{
+                    padding-right: 20px;
+                    .user_pic{
+                        img {
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .user_rating{
+                        svg{
+                            color: #fac451;
+                            border: #fac451;
+                        }
+                    }
+                }
+                .review{
+                    .review_date{
+                        color: map.get($theme-color,"main");
+                        padding-bottom: 5px;
+                    }
+                    .review_content{
+                        color: #515151;
+                        padding-top: 20px;
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+ 

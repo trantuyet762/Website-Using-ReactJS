@@ -27,53 +27,62 @@ const ProductsPage=()=>{
     ];
     const products=[
         {
+            id:21,
             img:featureImg1,
             name: "Đầm trắng dự tiệc",
             price: 600000
         },
         {
+            id: 31,
             img:featureImg2,
             name: "Đồng hồ Oyster Perpetual Day-Date",
             price: 1000000
 
         },
         {
+            id: 32,
             img:featureImg3,
             name: "Túi nam Hermès bộ sưu tập hè 2020",
             price: 800000
 
         },
         {
+            id: 22,
             img:featureImg4,
             name: "Áo kiểu BEIGE TENCEL set mẫu thiết kế",
             price: 500000
 
         },
         {
+            id: 11,
             img:featureImg5,
             name: "Áo sơ mi nam form rộng VIGO cổ V",
             price: 300000
 
         },
         {
+            id: 12,
             img:featureImg6,
             name: "Sơ mi nam kẻ xanh dáng vừa người ",
             price: 450000
 
         },
         {
+            id: 13,
             img:featureImg7,
             name: "Áo Khoác cardigan Dệt Kim Cho Nam",
             price: 500000
 
         },
         {
+            id: 23,
             img:featureImg8,
             name: "Đầm xòe dạo phố trắng dáng dài ",
             price: 700000
 
         },
         {
+            id: 33,
             img:featureImg9,
             name: "Giày cao gót hoa lan ",
             price: 450000
@@ -139,7 +148,7 @@ const ProductsPage=()=>{
                         products.map((product,index)=>
                         (
                             <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12" key={index}>
-                                <ProductsCard name={product.name} img={product.img} price={product.price}/>
+                                <ProductsCard id={product.id} name={product.name} img={product.img} price={product.price}/>
                         </div>
                         ))
                     }

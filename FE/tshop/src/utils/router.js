@@ -6,6 +6,7 @@ export const ROUTERS= {
         PRODUCTS:"san-pham",
         POSTS:"bai-viet",
         CONTACT: "lien-he",
-        CART: "gio-hang"
+        CART: "gio-hang",
+        DETAILPRODUCT: "chi-tiet-san-pham"
     }
 }
