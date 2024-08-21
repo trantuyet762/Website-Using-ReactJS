@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Website sử dụng ReactJS để xây dựng giao diện, tương thích với các thiết bị
+## Giao diện:
+- Trang chủ:
+  
+##Các danh mục khi kích vào sẽ hiển thị các sản phẩm tương ứng
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Các danh sách danh mục và menu sẽ thay đổi với các thiết bị khác nhau
+  ![image](https://github.com/user-attachments/assets/a8f0f601-39f2-4c69-a8a3-dd171d1c6460)
 
-## Available Scripts
+ ![image](https://github.com/user-attachments/assets/33fc50d1-386d-45a7-a237-f2a7f0ec6b6a)
 
-In the project directory, you can run:
+ **(ví dụ về 1 thiết bị khác)**
 
-### `npm start`
+ ![image](https://github.com/user-attachments/assets/31015d5b-4b97-441b-901c-fe941620e48e)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  **(ví dụ về 1 thiết bị khác)**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ ![image](https://github.com/user-attachments/assets/efdc07b1-efdd-436c-a590-7e75e047f9af)
 
-### `npm test`
+- Trang sản phẩm:
+  
+  ##Thiết kế với chức năng xem các xem phẩm theo từng danh mục
+  
+  ##Chức năng tìm kiếm theo giá
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  ##Sắp xếp các sản phẩm theo giá, sản phẩm bán chạy, giảm giá, sản phẩm mới và cũ.
 
-### `npm run build`
+  ![image](https://github.com/user-attachments/assets/fcac8b26-159c-4bb8-b058-6234677b3bf6)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Xem chi tiết sản phẩm:
+  
+  **Xem ảnh sản phẩm, mô tả, giá, lượt xem và chọn size, màu, số lương để mua**
+  
+  ![image](https://github.com/user-attachments/assets/bf33d67b-6918-4822-8dcf-306e20000b1a)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  **2 tab xem chi tiết sản phẩm và đánh giá**
+  
+  + Chi tiết sản phẩm:
+    
+    ![image](https://github.com/user-attachments/assets/60103e7f-a44f-4bc0-bac8-6ca3a8fb185b)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  + Đánh giá:
+    
+  ##Người dùng sẽ xem được các đánh giá của khách hàng đã mua về sản phẩm này.
 
-### `npm run eject`
+  ##Form đánh giá sẽ xuất hiện nếu người dùng đã mua sản phẩm.
+  
+  ##Nếu người dùng chưa đăng nhập mà đánh giá sản phẩm sẽ hiển thị thông báo phải đăng nhập (form nhập đánh giá vẫn xuất hiện khi chưa đăng nhập và chỉ ẩn khi người dùng đó đăng nhập nhưng chưa mua sản phẩm này).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  ![image](https://github.com/user-attachments/assets/a8f59eff-8256-4a04-99b3-a7b9a85d5ccb)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Trang giỏ hàng:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+##Hiển thị danh sách các sản phẩm đã thêm vào giỏ hàng
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+##Có chức năng thêm số lượng sản phẩm, xóa từng sản phẩm và tất cả sản phẩm
 
-## Learn More
+![image](https://github.com/user-attachments/assets/eaef5f8f-7c6d-47d5-a77a-65e7af7e436b)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ **(ví dụ về 1 thiết bị khác)**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](https://github.com/user-attachments/assets/c480e547-66c9-42aa-a951-4dec35feb676)
 
-### Code Splitting
+- Trang thanh toán:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##Trang thanh toán hiển thị thông tin khách hàng cần nhập và giỏ hàng đi kèm
 
-### Analyzing the Bundle Size
+![image](https://github.com/user-attachments/assets/39ca2a88-9a31-4e39-ab93-212a106e7614)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ **(ví dụ về 1 thiết bị khác)**
 
-### Making a Progressive Web App
+ ![image](https://github.com/user-attachments/assets/2f63796d-1611-442e-90a3-8680dd7934bf)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
